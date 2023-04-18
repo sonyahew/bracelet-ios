@@ -1,2 +1,3 @@
-# bracelet-ios
+# Bracelet - iOS
+
 A bracelet customisation app.

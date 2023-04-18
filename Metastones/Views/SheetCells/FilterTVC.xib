@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterTVC" rowHeight="68" id="Xn5-jt-b52" customClass="FilterTVC" customModule="Metastones" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xn5-jt-b52" id="Iw4-mq-Kjp">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-sv-hLk">
+                        <rect key="frame" x="32" y="23" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="KYk-sv-hLk" secondAttribute="height" multiplier="1:1" id="ZSo-dd-LqE"/>
+                        </constraints>
+                        <state key="normal" image="icon-check-off"/>
+                        <state key="selected" image="icon-check-g"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk9-KL-Qph">
+                        <rect key="frame" x="66" y="16" width="42" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fk9-KL-Qph" secondAttribute="bottom" constant="16" id="GAi-He-SFt"/>
+                    <constraint firstItem="KYk-sv-hLk" firstAttribute="leading" secondItem="Iw4-mq-Kjp" secondAttribute="leading" constant="32" id="SKF-b0-Gyx"/>
+                    <constraint firstItem="fk9-KL-Qph" firstAttribute="top" secondItem="Iw4-mq-Kjp" secondAttribute="top" constant="16" id="Ylk-Ao-v6z"/>
+                    <constraint firstItem="KYk-sv-hLk" firstAttribute="centerY" secondItem="Iw4-mq-Kjp" secondAttribute="centerY" id="tZL-qb-c0r"/>
+                    <constraint firstItem="fk9-KL-Qph" firstAttribute="leading" secondItem="KYk-sv-hLk" secondAttribute="trailing" constant="12" id="y9j-2O-r1B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnCheck" destination="KYk-sv-hLk" id="DC4-IY-aVE"/>
+                <outlet property="lbTitle" destination="fk9-KL-Qph" id="Cur-mD-wmg"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="26.785714285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-check-g" width="16.5" height="12"/>
+        <image name="icon-check-off" width="16.5" height="13"/>
+    </resources>
+</document>

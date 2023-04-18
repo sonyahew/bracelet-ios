@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="listingCVC" id="ukj-BB-Kga" customClass="ListingCVC" customModule="Metastones" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rYJ-Yi-gbU">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mIJ-UF-fw1">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mIJ-UF-fw1" secondAttribute="height" multiplier="1:1" id="U8F-QD-Cpq"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAS-Re-fbG">
+                        <rect key="frame" x="6" y="6" width="66" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEST SELLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2w-0e-Vdd">
+                                <rect key="frame" x="6" y="5" width="54" height="10"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5725490196078431" green="0.47843137254901957" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n2w-0e-Vdd" firstAttribute="centerY" secondItem="wAS-Re-fbG" secondAttribute="centerY" id="7yY-Hh-1li"/>
+                            <constraint firstAttribute="width" secondItem="n2w-0e-Vdd" secondAttribute="width" constant="12" id="Xwi-A8-sx3"/>
+                            <constraint firstItem="n2w-0e-Vdd" firstAttribute="centerX" secondItem="wAS-Re-fbG" secondAttribute="centerX" id="bkV-Lo-Uhy"/>
+                            <constraint firstAttribute="height" constant="20" id="vkz-IS-etL"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RM300.00" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hes-ht-ILh">
+                        <rect key="frame" x="0.0" y="162" width="108" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.70588235290000001" green="0.58431372550000005" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fashion 7 Chakra Stone Bracelet Amethyst Crystal Jewelly Reiki" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZX-vV-mfb">
+                        <rect key="frame" x="0.0" y="185" width="150" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPU-Td-g78">
+                        <rect key="frame" x="108" y="149.5" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OPU-Td-g78" secondAttribute="height" multiplier="1:1" id="4Zj-gz-8H2"/>
+                            <constraint firstAttribute="width" constant="42" id="cUP-Hs-CEX"/>
+                        </constraints>
+                        <state key="normal" image="icon-fav-off"/>
+                        <state key="selected" image="icon-fav-on"/>
+                        <connections>
+                            <action selector="favHandler:" destination="ukj-BB-Kga" eventType="touchUpInside" id="b4w-LC-zuE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OPU-Td-g78" firstAttribute="leading" secondItem="hes-ht-ILh" secondAttribute="trailing" id="0o8-8w-RfW"/>
+                    <constraint firstItem="wAS-Re-fbG" firstAttribute="top" secondItem="rYJ-Yi-gbU" secondAttribute="top" constant="6" id="0ov-6b-A1f"/>
+                    <constraint firstItem="mIJ-UF-fw1" firstAttribute="top" secondItem="rYJ-Yi-gbU" secondAttribute="top" id="BY5-n0-GPh"/>
+                    <constraint firstItem="hes-ht-ILh" firstAttribute="leading" secondItem="rYJ-Yi-gbU" secondAttribute="leading" id="Cja-z5-oD7"/>
+                    <constraint firstItem="OPU-Td-g78" firstAttribute="centerY" secondItem="hes-ht-ILh" secondAttribute="centerY" id="DBW-Al-kFc"/>
+                    <constraint firstAttribute="trailing" secondItem="mIJ-UF-fw1" secondAttribute="trailing" id="Swu-of-AaL"/>
+                    <constraint firstAttribute="trailing" secondItem="rZX-vV-mfb" secondAttribute="trailing" id="T01-Rn-ii7"/>
+                    <constraint firstItem="wAS-Re-fbG" firstAttribute="leading" secondItem="rYJ-Yi-gbU" secondAttribute="leading" constant="6" id="cvP-Pm-NrT"/>
+                    <constraint firstItem="mIJ-UF-fw1" firstAttribute="leading" secondItem="rYJ-Yi-gbU" secondAttribute="leading" id="gan-Hu-ew2"/>
+                    <constraint firstItem="rZX-vV-mfb" firstAttribute="leading" secondItem="rYJ-Yi-gbU" secondAttribute="leading" id="gu8-ZR-htE"/>
+                    <constraint firstAttribute="trailing" secondItem="OPU-Td-g78" secondAttribute="trailing" id="kDd-rI-qW7"/>
+                    <constraint firstItem="hes-ht-ILh" firstAttribute="top" secondItem="mIJ-UF-fw1" secondAttribute="bottom" constant="12" id="otx-Xh-6TT"/>
+                    <constraint firstItem="rZX-vV-mfb" firstAttribute="top" secondItem="hes-ht-ILh" secondAttribute="bottom" constant="6" id="rry-XZ-rmD"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="219" height="295"/>
+            <connections>
+                <outlet property="btnFav" destination="OPU-Td-g78" id="gGO-IH-Dy8"/>
+                <outlet property="ivProduct" destination="mIJ-UF-fw1" id="sZ7-ES-KZD"/>
+                <outlet property="lbBestSeller" destination="n2w-0e-Vdd" id="ibf-SG-DS4"/>
+                <outlet property="lbDesc" destination="rZX-vV-mfb" id="Wpg-rs-Bvz"/>
+                <outlet property="lbPrice" destination="hes-ht-ILh" id="dVx-G7-bqG"/>
+                <outlet property="vwBestSeller" destination="wAS-Re-fbG" id="147-kZ-zwQ"/>
+            </connections>
+            <point key="canvasLocation" x="-174.63768115942031" y="114.84375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon-fav-off" width="15" height="13.5"/>
+        <image name="icon-fav-on" width="15" height="13.5"/>
+    </resources>
+</document>

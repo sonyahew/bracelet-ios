@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newArrivalsCVC" id="c4O-KG-Te4" customClass="NewArrivalsCVC" customModule="Metastones" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sen-1D-STT">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4e-vC-vQN">
+                        <rect key="frame" x="0.0" y="0.0" width="412" height="280"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcg-Mp-rvp">
+                                <rect key="frame" x="0.0" y="0.0" width="412" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dcg-Mp-rvp" firstAttribute="top" secondItem="l4e-vC-vQN" secondAttribute="top" id="1Gx-qZ-z65"/>
+                            <constraint firstAttribute="bottom" secondItem="dcg-Mp-rvp" secondAttribute="bottom" id="Bic-hT-y50"/>
+                            <constraint firstItem="dcg-Mp-rvp" firstAttribute="leading" secondItem="l4e-vC-vQN" secondAttribute="leading" id="sre-VE-xw8"/>
+                            <constraint firstAttribute="trailing" secondItem="dcg-Mp-rvp" secondAttribute="trailing" id="whe-TQ-1Bj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="l4e-vC-vQN" secondAttribute="trailing" id="134-wM-rlg"/>
+                    <constraint firstAttribute="bottom" secondItem="l4e-vC-vQN" secondAttribute="bottom" id="5KU-nx-HlL"/>
+                    <constraint firstItem="l4e-vC-vQN" firstAttribute="top" secondItem="sen-1D-STT" secondAttribute="top" id="BBd-gN-Eog"/>
+                    <constraint firstItem="l4e-vC-vQN" firstAttribute="leading" secondItem="sen-1D-STT" secondAttribute="leading" id="gnl-Zi-yaf"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="412" height="280"/>
+            <connections>
+                <outlet property="ivProduct" destination="dcg-Mp-rvp" id="0tT-Sl-TII"/>
+                <outlet property="vwProduct" destination="l4e-vC-vQN" id="naO-uO-ubd"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="118.52678571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

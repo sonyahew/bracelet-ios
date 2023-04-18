@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shippingTVC" rowHeight="59" id="dO0-g2-sg0" customClass="ShippingTVC" customModule="Metastones" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dO0-g2-sg0" id="k9f-yd-mpg">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3YG-Es-HnI">
+                        <rect key="frame" x="16" y="-2" width="382" height="60"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0c4-J1-8dh">
+                                <rect key="frame" x="4" y="6" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="W7a-GS-brn"/>
+                                </constraints>
+                                <state key="normal" image="icon-radio-off"/>
+                                <state key="selected" image="icon-radio-on"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1BR-pN-PbB">
+                                <rect key="frame" x="56" y="8" width="98" height="48"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="SFz-vs-MnX"/>
+                                    <constraint firstAttribute="height" constant="48" id="ZJA-wd-l9I"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RM23.33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1r-l3-zkz">
+                                <rect key="frame" x="307.5" y="23.5" width="58.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1BR-pN-PbB" secondAttribute="bottom" constant="8" id="03c-Ze-vxX"/>
+                            <constraint firstItem="0c4-J1-8dh" firstAttribute="leading" secondItem="3YG-Es-HnI" secondAttribute="leading" constant="4" id="8JD-Ps-10C"/>
+                            <constraint firstItem="1BR-pN-PbB" firstAttribute="centerY" secondItem="3YG-Es-HnI" secondAttribute="centerY" id="FmJ-vF-ybk"/>
+                            <constraint firstAttribute="trailing" secondItem="w1r-l3-zkz" secondAttribute="trailing" constant="16" id="Jid-S5-giZ"/>
+                            <constraint firstItem="1BR-pN-PbB" firstAttribute="top" secondItem="3YG-Es-HnI" secondAttribute="top" constant="8" id="ORk-0R-AZf"/>
+                            <constraint firstItem="0c4-J1-8dh" firstAttribute="width" secondItem="0c4-J1-8dh" secondAttribute="height" multiplier="1:1" id="W4G-gI-ddg"/>
+                            <constraint firstItem="w1r-l3-zkz" firstAttribute="centerY" secondItem="1BR-pN-PbB" secondAttribute="centerY" id="Xwz-S2-1sm"/>
+                            <constraint firstItem="1BR-pN-PbB" firstAttribute="leading" secondItem="0c4-J1-8dh" secondAttribute="trailing" constant="4" id="dIz-N9-EVN"/>
+                            <constraint firstItem="0c4-J1-8dh" firstAttribute="centerY" secondItem="3YG-Es-HnI" secondAttribute="centerY" id="dqT-SE-pTU"/>
+                            <constraint firstAttribute="height" constant="60" id="lRJ-9u-DQi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3YG-Es-HnI" secondAttribute="bottom" constant="-2" id="1SZ-fR-KHr"/>
+                    <constraint firstItem="3YG-Es-HnI" firstAttribute="leading" secondItem="k9f-yd-mpg" secondAttribute="leading" constant="16" id="63O-W8-1Q0"/>
+                    <constraint firstAttribute="trailing" secondItem="3YG-Es-HnI" secondAttribute="trailing" constant="16" id="OfW-Nk-kHq"/>
+                    <constraint firstItem="3YG-Es-HnI" firstAttribute="top" secondItem="k9f-yd-mpg" secondAttribute="top" constant="-2" id="m9A-EE-Hy1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnCheck" destination="0c4-J1-8dh" id="c9A-eH-dNA"/>
+                <outlet property="ivService" destination="1BR-pN-PbB" id="NLK-ps-vHQ"/>
+                <outlet property="lbFee" destination="w1r-l3-zkz" id="HkK-fM-VFO"/>
+                <outlet property="vwBorder" destination="3YG-Es-HnI" id="57m-F3-TBU"/>
+            </connections>
+            <point key="canvasLocation" x="-33.333333333333336" y="108.81696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-radio-off" width="20" height="20"/>
+        <image name="icon-radio-on" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CreateCartTVHC" customModule="Metastones" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEX-o6-6d8">
+                    <rect key="frame" x="6" y="58.5" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="ZKR-xe-uDH"/>
+                        <constraint firstAttribute="width" secondItem="pEX-o6-6d8" secondAttribute="height" multiplier="1:1" id="f86-az-q9O"/>
+                    </constraints>
+                    <state key="normal" image="icon-unchecked"/>
+                    <state key="selected" image="icon-checked"/>
+                    <connections>
+                        <action selector="checkHandler:" destination="iN0-l3-epB" eventType="touchUpInside" id="35m-S9-UK6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE OWN DESIGN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H64-QC-6K8">
+                    <rect key="frame" x="54" y="74" width="297" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H64-QC-6K8" firstAttribute="leading" secondItem="pEX-o6-6d8" secondAttribute="trailing" id="Sve-fp-SzZ"/>
+                <constraint firstAttribute="trailing" secondItem="H64-QC-6K8" secondAttribute="trailing" constant="16" id="htG-MY-B8d"/>
+                <constraint firstItem="pEX-o6-6d8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="onW-wS-2km"/>
+                <constraint firstItem="H64-QC-6K8" firstAttribute="centerY" secondItem="pEX-o6-6d8" secondAttribute="centerY" id="rJh-8C-Ri7"/>
+                <constraint firstItem="pEX-o6-6d8" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="4" id="yyZ-9j-ldq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnCheck" destination="pEX-o6-6d8" id="1Eo-Z7-Ijb"/>
+                <outlet property="lbCreate" destination="H64-QC-6K8" id="L6f-9d-R3X"/>
+            </connections>
+            <point key="canvasLocation" x="102.17391304347827" y="207.92410714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-checked" width="19.5" height="19.5"/>
+        <image name="icon-unchecked" width="19.5" height="19.5"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Metastones {
+  umbrella header "Pods-Metastones-umbrella.h"
+
+  export *
+  module * { export * }
+}
